@@ -1,3 +1,23 @@
+/**************** set Scroll bar style  *************/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+
+
+/* UTILITY */
+
 .my_background {
     background-color: #083b4c;
 }
@@ -15,4 +35,15 @@
     height: 100px;
 
     border: 1px black solid;
+
+    /* EXPERIMENT */
+    animation: opacityChange 0.3s ease-in;
+}
+
+/* EXPERIMENT */
+@keyframes opacityChange{
+    from {opacity: 0.1}
+    
+    to {opacity: 1}
+
 }
